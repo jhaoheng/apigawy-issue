@@ -1,0 +1,49 @@
+{
+  "hosted-zone:account=424613967558:domainName=huder.link:region=ap-southeast-1": {
+    "Id": "/hostedzone/Z02842161161RJQP46Q2B",
+    "Name": "huder.link."
+  },
+  "vpc-provider:account=424613967558:filter.vpc-id=vpc-32121a50:region=ap-southeast-1:returnAsymmetricSubnets=true": {
+    "vpcId": "vpc-32121a50",
+    "vpcCidrBlock": "172.31.0.0/16",
+    "availabilityZones": [],
+    "subnetGroups": [
+      {
+        "name": "Public",
+        "type": "Public",
+        "subnets": [
+          {
+            "subnetId": "subnet-e64e4684",
+            "cidr": "172.31.0.0/20",
+            "availabilityZone": "ap-southeast-1a",
+            "routeTableId": "rtb-adc5cdcf"
+          },
+          {
+            "subnetId": "subnet-9a2902ee",
+            "cidr": "172.31.16.0/20",
+            "availabilityZone": "ap-southeast-1b",
+            "routeTableId": "rtb-adc5cdcf"
+          },
+          {
+            "subnetId": "subnet-71abfb37",
+            "cidr": "172.31.32.0/20",
+            "availabilityZone": "ap-southeast-1c",
+            "routeTableId": "rtb-adc5cdcf"
+          }
+        ]
+      },
+      {
+        "name": "Private",
+        "type": "Private",
+        "subnets": [
+          {
+            "subnetId": "subnet-07698700592d45df7",
+            "cidr": "172.31.48.0/20",
+            "availabilityZone": "ap-southeast-1a",
+            "routeTableId": "rtb-05f5ee23a7632dc27"
+          }
+        ]
+      }
+    ]
+  }
+}
