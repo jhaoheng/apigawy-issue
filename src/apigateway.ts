@@ -49,7 +49,7 @@ export class SetApiGateway extends cdk.Construct {
                             new iam.AnyPrincipal()
                         ],
                         actions: ['execute-api:Invoke'],
-                        resources: [`arn:aws:execute-api:ap-southeast-1:${cdk.Stack.of(this).account}:*/*/*/*`],
+                        resources: [`arn:aws:execute-api:${cdk.Stack.of(this).region}:${cdk.Stack.of(this).account}:*/*/*/*`],
                         conditions: {
                             "IpAddress": { "aws:SourceIp": props.SourceIps }
                         }

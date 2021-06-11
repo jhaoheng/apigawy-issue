@@ -24,15 +24,8 @@ export class SetApiLambda extends cdk.Construct {
     //
     private set_api_lambda(props: SetApiLambdaProps, role: iam.Role): lambda.Function {
 
-        const myLambdaSecurityGroup = new ec2.SecurityGroup(this, 'SecurityGroup', {
-            vpc: props.Vpc,
-            description: 'Allow ssh access to ec2 instances',
-            allowAllOutbound: true   // Can be set to false
-        });
-        myLambdaSecurityGroup.addIngressRule(ec2.Peer.anyIpv4(), ec2.Port.tcp(443), 'allow ssh access from the world')
-
-        return new lambda.Function(this, 'SchduleApiLambda', {
-            functionName: `${props.FamilyName}_SchduleApiLambda`,
+        return new lambda.Function(this, 'ApiLambda', {
+            functionName: `${props.FamilyName}_ApiLambda`,
             runtime: lambda.Runtime.GO_1_X,
             handler: 'main',
             code: lambda.Code.fromAsset(path.join(__dirname + '/../', 'lambda-handler/api'), {
@@ -55,9 +48,6 @@ export class SetApiLambda extends cdk.Construct {
             vpcSubnets: props.Vpc.selectSubnets({
                 subnets: props.VpcSubnets
             }),
-            securityGroups: [
-                myLambdaSecurityGroup,
-            ],
         });
     }
 
