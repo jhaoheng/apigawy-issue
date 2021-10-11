@@ -139,6 +139,15 @@
     "@aws-cdk/core" "1.108.0"
     constructs "^3.3.69"
 
+"@aws-cdk/aws-cloudwatch@1.127.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-cloudwatch/-/aws-cloudwatch-1.127.0.tgz#fb6a88e38e4ff551e4791a82afceb78824a4a2f1"
+  integrity sha512-FAvbVFiVuMcfRmlMioFO0wmX4zcxJ9c48N/TU7Pug1tnVY8WWgzSXqsnuezyNKcjCDdmKdfCOEWZN08f99Yrgg==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.127.0"
+    "@aws-cdk/core" "1.127.0"
+    constructs "^3.3.69"
+
 "@aws-cdk/aws-codebuild@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-codebuild/-/aws-codebuild-1.108.0.tgz#225284d97d23fd0aa92fe44b2be37db49ded8c26"
@@ -375,13 +384,22 @@
     "@aws-cdk/custom-resources" "1.108.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-iam@1.108.0", "@aws-cdk/aws-iam@^1.73.0":
+"@aws-cdk/aws-iam@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.108.0.tgz#15227c0f2ba6247e103dd3cdfc2d02b023c7f537"
   integrity sha512-M9sr9Rhla1tg75fI2RppSPtspsB2ELiGLgf/JXlMkgUJD7gF3AnXssxjiXTCxXz6Ow9i29vPYbLnK3OF042zeg==
   dependencies:
     "@aws-cdk/core" "1.108.0"
     "@aws-cdk/region-info" "1.108.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-iam@1.127.0", "@aws-cdk/aws-iam@^1.73.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-iam/-/aws-iam-1.127.0.tgz#04f47e1cd6d71bf05975e400f9bbf100db57388b"
+  integrity sha512-JPbf69uj3LmE9nM2Y1vVGO6zMIu9mWGKq3k21PFGLbxExvRiSYrmYFt1qqDNIcSgOubN6kQa8dD4R5j8QPlpDg==
+  dependencies:
+    "@aws-cdk/core" "1.127.0"
+    "@aws-cdk/region-info" "1.127.0"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-kinesis@1.108.0":
@@ -412,6 +430,17 @@
     "@aws-cdk/aws-iam" "1.108.0"
     "@aws-cdk/core" "1.108.0"
     "@aws-cdk/cx-api" "1.108.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-kms@1.127.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.127.0.tgz#2971bdf12b2b8bb8f9536cca89802f964873cd2d"
+  integrity sha512-rN+8a7bAn9EHMqqC8C3tOTyNlRvQOFrpVS1FP8yk2nh2jV1rbuUJ1c8wVjLj6c3uy0J2RzGBSvIKBXWPQmMz+Q==
+  dependencies:
+    "@aws-cdk/aws-iam" "1.127.0"
+    "@aws-cdk/cloud-assembly-schema" "1.127.0"
+    "@aws-cdk/core" "1.127.0"
+    "@aws-cdk/cx-api" "1.127.0"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-lambda-event-sources@^1.73.0":
@@ -607,7 +636,7 @@
     "@aws-cdk/core" "1.108.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-sqs@1.108.0", "@aws-cdk/aws-sqs@^1.73.0":
+"@aws-cdk/aws-sqs@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-sqs/-/aws-sqs-1.108.0.tgz#4fbe33abe8535bd3ee4062b5952d9d379655b68c"
   integrity sha512-jCZwbc4fqhg2c5ZCLnTVbYjCNMoaShp9yQaXvQOLWwoh7RTfc8zoN8fxuUPFe/5UIQaRSxk2YH1NZkcjQMC7Wg==
@@ -616,6 +645,17 @@
     "@aws-cdk/aws-iam" "1.108.0"
     "@aws-cdk/aws-kms" "1.108.0"
     "@aws-cdk/core" "1.108.0"
+    constructs "^3.3.69"
+
+"@aws-cdk/aws-sqs@^1.73.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-sqs/-/aws-sqs-1.127.0.tgz#5b05a8302346c62401d0c9f75c4a299d39a62cd8"
+  integrity sha512-oVhSpfRkaEJD1hVAnAtKEGnSDXTzMwjJkqknyTSFdLXsTYcbO5NeSfNq3idKV6mXLhJIz3TKedLpWY2s/vliCw==
+  dependencies:
+    "@aws-cdk/aws-cloudwatch" "1.127.0"
+    "@aws-cdk/aws-iam" "1.127.0"
+    "@aws-cdk/aws-kms" "1.127.0"
+    "@aws-cdk/core" "1.127.0"
     constructs "^3.3.69"
 
 "@aws-cdk/aws-ssm@1.108.0":
@@ -657,6 +697,14 @@
     jsonschema "^1.4.0"
     semver "^7.3.5"
 
+"@aws-cdk/cloud-assembly-schema@1.127.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-1.127.0.tgz#35dca4d136a92574ff476e416832da94d1178ad9"
+  integrity sha512-zDi6zQCDATbXlDTmYp3QTwX4C4uwIUmF1yKjrtDGbJmz7AGe7faDwIzHFaNgsoa4HGHq4QbnnaEwfj2QSYhlnw==
+  dependencies:
+    jsonschema "^1.4.0"
+    semver "^7.3.5"
+
 "@aws-cdk/cloudformation-diff@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/cloudformation-diff/-/cloudformation-diff-1.108.0.tgz#b28ec3bc7075a341ef048ec86bf5cba7655f3daf"
@@ -670,7 +718,7 @@
     string-width "^4.2.2"
     table "^6.7.1"
 
-"@aws-cdk/core@1.108.0", "@aws-cdk/core@^1.73.0":
+"@aws-cdk/core@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.108.0.tgz#5349572bf1da6627d79a6dbc3ec85d0fbf073a58"
   integrity sha512-PQHFfm/0QE85Mw9jMmpN/hMMUHywceJddInVZbCUBySh1E57k5bHaY0v7Dv92ehoHXk+wShbaXinzwcQz8ROfQ==
@@ -678,6 +726,20 @@
     "@aws-cdk/cloud-assembly-schema" "1.108.0"
     "@aws-cdk/cx-api" "1.108.0"
     "@aws-cdk/region-info" "1.108.0"
+    "@balena/dockerignore" "^1.0.2"
+    constructs "^3.3.69"
+    fs-extra "^9.1.0"
+    ignore "^5.1.8"
+    minimatch "^3.0.4"
+
+"@aws-cdk/core@1.127.0", "@aws-cdk/core@^1.73.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/core/-/core-1.127.0.tgz#175a1b8de80c4abc560de142d5c82a29cf106fd4"
+  integrity sha512-1Q+KogP+wsHIj9xItA6RVBAwF9gDcdXfGl2qks1TRJu9ekhswSY5cd6LfW4rxGg7JrrwKLipZRvVoOeG5hQNag==
+  dependencies:
+    "@aws-cdk/cloud-assembly-schema" "1.127.0"
+    "@aws-cdk/cx-api" "1.127.0"
+    "@aws-cdk/region-info" "1.127.0"
     "@balena/dockerignore" "^1.0.2"
     constructs "^3.3.69"
     fs-extra "^9.1.0"
@@ -706,10 +768,23 @@
     "@aws-cdk/cloud-assembly-schema" "1.108.0"
     semver "^7.3.5"
 
+"@aws-cdk/cx-api@1.127.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cx-api/-/cx-api-1.127.0.tgz#907c99ebc21c97fead51b043e13a0249b1719cbc"
+  integrity sha512-lw9pUw0/awB5XKZ0etLzDhOa33GhNPmg6litev72SG48X07bMiAPwFwrtMKV5UgTTaUzHWgXar+coAdDvIUpnQ==
+  dependencies:
+    "@aws-cdk/cloud-assembly-schema" "1.127.0"
+    semver "^7.3.5"
+
 "@aws-cdk/region-info@1.108.0":
   version "1.108.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/region-info/-/region-info-1.108.0.tgz#2a1cac521d208329bdbbb581e0a5e0c37fd0e271"
   integrity sha512-5KOf75ch0ilKeI60kcI2OdD2tRDf6QcnzUntz4mlcRSpSRPT1mnYN2ud8AJsesiUMX/Uixufj6iRIkgOe6pg9g==
+
+"@aws-cdk/region-info@1.127.0":
+  version "1.127.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/region-info/-/region-info-1.127.0.tgz#b17ed0991dcc34619668a2ad876744180eb09fd1"
+  integrity sha512-sH7bwfmozUOMmCMG5Isrr93MEk2zhztVtvu6a9HM1Ski1QiDbmVsPejOJWMILuGy9m+97L3ji5uBxxRWrBAfpw==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"
