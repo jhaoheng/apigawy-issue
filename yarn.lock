@@ -774,7 +774,7 @@
     "@aws-cdk/region-info" "1.163.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-logs@1.162.0", "@aws-cdk/aws-logs@^1.73.0":
+"@aws-cdk/aws-logs@1.162.0":
   version "1.162.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-logs/-/aws-logs-1.162.0.tgz#7df922b95db09878ae998a1f371b25e9b20bf486"
   integrity sha512-wrhYrIKGytdZKbbh+YNEvAzX58nliNG6dnLg87yjJyNeKelPaT4Z5NCW9kB8iO7RZunq9VCYRGv03X7CX4xTqw==
@@ -787,7 +787,7 @@
     "@aws-cdk/cx-api" "1.162.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-logs@1.163.0":
+"@aws-cdk/aws-logs@1.163.0", "@aws-cdk/aws-logs@^1.73.0":
   version "1.163.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-logs/-/aws-logs-1.163.0.tgz#cac5808504670daacad7b2d1fd4af4a931572122"
   integrity sha512-JOJsfSlULrhP8U/QM9lxS3OoRk/bhlNP9mvaNX1q2/4xNBIsDO1JWM/d005hTwt5zuxOs+Tuf3ZBrutIyYiySQ==
